@@ -15,15 +15,15 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
-
-/**,
+/* 
+*,
 *:before,
 *:after {
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: inherit;
-}*/
+} */
 
 .list {
   list-style: none;
@@ -37,20 +37,34 @@ button {
 .container {
   background-color: coral;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 15px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*!----------------------------*/
 
 /* !header */
 
+.logo {
+  color: var(--col--blue);
+  font-size: 26px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2;
+  vertical-align: Top;
+}
+
+.logo-part {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 93px;
+}
+
 .link {
   color: var(--col--black);
   text-decoration: none;
   padding-top: 32px;
-  padding-bottom: 32;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -61,34 +75,30 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px;
   border-bottom: 1px solid #ececec;
 }
 
-.logo {
-  color: var(--col--blue);
-  font-size: 26px;
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  line-height: 1.2;
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
-.logo-part {
-  color: #000000;
-  text-decoration: none;
-  margin-right: 93px;
+.container .contact {
+  display: flex;
 }
+
 .nav-top {
   display: inline-block;
   align-items: center;
 }
 
 /* !menu*/
+
 .menu-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+
   align-items: center;
+  padding: 32px 0;
 }
 
 .menu-list .linklu:not(:last-child) {
@@ -113,21 +123,29 @@ button {
   letter-spacing: 0.02em;
 }
 
-.contact .link:hover,
 .contact .link:focus {
   color: var(--col--blue);
   text-decoration: none;
 }
+.contact .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 /*!cap*/
-.cap .container {
-  /*колір grey тимчасовий*/
-  background-color: var(--col--grey);
-  max-width: 1630;
-  margin: 15 auto;
+.cap {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 0;
 }
 
 .cap-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 670px;
+
   color: var(--col--white);
   font-weight: 900;
   font-size: 44px;
@@ -135,6 +153,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .button-order {
@@ -142,7 +161,7 @@ button {
   background-color: var(--col--blue);
   border-color: transparent;
   cursor: pointer;
-  margin: auto;
+  margin: 40px auto;
   min-width: 216px;
   min-height: 50px;
   border-radius: 4px;
