@@ -5,17 +5,17 @@
   --col--grey: #2f303a;
   --col--white: #f5f5f5;
 }
-
-html {
-  box-sizing: border-box;
+.section {
+  padding: 94px 0;
 }
+
 body {
   background-color: var(--col--white);
   color: var(--col--black);
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
-/* 
+
 *,
 *:before,
 *:after {
@@ -23,7 +23,7 @@ body {
   margin: 0;
   border: 0;
   box-sizing: inherit;
-} */
+}
 
 .list {
   list-style: none;
@@ -35,10 +35,25 @@ button {
 
 /*колір пом. тимчасовий*/
 .container {
-  background-color: coral;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*!----------------------------*/
@@ -81,10 +96,12 @@ button {
 .header .container {
   display: flex;
   align-items: center;
+  /*justify-content: space-around;*/
 }
 
 .container .contact {
   display: flex;
+  justify-content: flex-end;
 }
 
 .nav-top {
@@ -113,7 +130,9 @@ button {
 .menu-list .link.current {
   color: var(--col--blue);
 }
-
+.contact {
+  margin-right: auto;
+}
 .contact .link {
   color: var(--col--black);
   text-decoration: none;
@@ -137,6 +156,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0;
+  background-image: url(../images/backround.jpg);
 }
 
 .cap-title {
@@ -174,6 +194,14 @@ button {
 
 /*!features*/
 
+.features {
+  display: flex;
+  gap: 30px;
+}
+
+.features-section {
+  padding-bottom: 0;
+}
 .section .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -196,16 +224,27 @@ button {
 
 /*!our_company*/
 
+.company {
+  display: flex;
+  gap: 30px;
+}
+
+.work {
+  display: flex;
+  gap: 30px;
+}
 .company .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
 }
 
 .company .title-text {
   color: var(--col--lgrey);
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
 }
 
 /*!dasement*/
