@@ -16,27 +16,53 @@ body {
   letter-spacing: 0.03em;
 }
 
-*,
+/**,
 *:before,
 *:after {
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: inherit;
-}
+}*/
 
 .list {
   list-style: none;
 }
 
-/* !header style */
+button {
+  cursor: pointer;
+}
 
-.container-header {
+/*колір пом. тимчасовий*/
+.container {
   background-color: coral;
-  max-width: 1630px;
-  margin: 15 auto;
-  padding: 31px 0px 0px 0px;
-  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px;
+}
+
+/*!----------------------------*/
+
+/* !header */
+
+.link {
+  color: var(--col--black);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -45,12 +71,12 @@ body {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   line-height: 1.2;
-  padding: 31px 0px 0px 145px;
 }
 
 .logo-part {
   color: #000000;
   text-decoration: none;
+  margin-right: 93px;
 }
 .nav-top {
   display: inline-block;
@@ -58,21 +84,23 @@ body {
 }
 
 /* !menu*/
-
-.menu .link {
-  color: var(--col--black);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
 }
-.menu .link:hover,
-.menu .link:focus {
+
+.menu-list .linklu:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-list .link:hover,
+.menu-list .link:focus {
   color: var(--col--blue);
 }
 
-.menu .link.current {
+.menu-list .link.current {
   color: var(--col--blue);
 }
 
@@ -92,13 +120,11 @@ body {
 }
 
 /*!cap*/
-
-.container {
+.cap .container {
+  /*колір grey тимчасовий*/
+  background-color: var(--col--grey);
   max-width: 1630;
   margin: 15 auto;
-}
-.cap {
-  background-color: var(--col--grey);
 }
 
 .cap-title {
@@ -113,14 +139,19 @@ body {
 
 .button-order {
   color: var(--col--white);
-  background-color: #2196f3;
+  background-color: var(--col--blue);
+  border-color: transparent;
   cursor: pointer;
+  margin: auto;
+  min-width: 216px;
+  min-height: 50px;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  display: inline-block;
-
+  display: block;
+}
 
 /*!features*/
 
