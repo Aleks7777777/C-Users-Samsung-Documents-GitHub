@@ -96,12 +96,10 @@ button {
 .header .container {
   display: flex;
   align-items: center;
-  /*justify-content: space-around;*/
 }
 
 .container .contact {
   display: flex;
-  justify-content: flex-end;
 }
 
 .nav-top {
@@ -113,7 +111,6 @@ button {
 
 .menu-list {
   display: flex;
-
   align-items: center;
   padding: 32px 0;
 }
@@ -207,6 +204,7 @@ button {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .features .title {
@@ -247,7 +245,7 @@ button {
   text-align: center;
 }
 
-/*!dasement*/
+/*!footer*/
 
 .footer {
   background-color: var(--col--grey);
@@ -286,7 +284,7 @@ button {
   font-style: normal;
 }
 
-/* !portfolio.html */
+/* ?portfolio.html */
 
 /*!filter*/
 
@@ -316,4 +314,11 @@ button {
   color: var(--col--lgrey);
   font-size: 16px;
   line-height: 1.8;
+}
+.portfolio {
+  display: flex;
+}
+.port-button .list {
+  text-align: center;
+  display: inline;
 }
