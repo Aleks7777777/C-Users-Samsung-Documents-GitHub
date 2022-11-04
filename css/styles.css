@@ -10,15 +10,13 @@
 }
 
 body {
-  background-color: var(--col--white);
+  background-color: #ffffff;
   color: var(--col--black);
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
 
-*,
-*:before,
-*:after {
+* {
   padding: 0;
   margin: 0;
   border: 0;
@@ -163,7 +161,6 @@ button {
   margin-left: auto;
   margin-right: auto;
   max-width: 670px;
-
   color: var(--col--white);
   font-weight: 900;
   font-size: 44px;
@@ -179,7 +176,7 @@ button {
   background-color: var(--col--blue);
   border-color: transparent;
   cursor: pointer;
-  margin: 40px auto;
+  margin: 0 auto;
   min-width: 216px;
   min-height: 50px;
   border-radius: 4px;
@@ -228,6 +225,10 @@ button {
   gap: 30px;
 }
 
+.company-container {
+  background-color: #f5f4fa;
+}
+
 .work {
   display: flex;
   gap: 30px;
@@ -246,6 +247,9 @@ button {
   line-height: 1.2;
   text-align: center;
   margin-top: 10px;
+}
+.company-jpg {
+  background-color: #ffffff;
 }
 
 /*!footer*/
@@ -301,20 +305,32 @@ button {
 
 /*!filter*/
 
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: #2196f3;
+}
+
+.main-btn {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 34px;
+  flex-wrap: nowrap;
+}
+
+.filter .filter-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-btn {
   color: var(--col--black);
-  background-color: #f5f4fa;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-}
-
-.filter-btn:hover,
-.filter-btn:focus {
-  color: var(--col--white);
-  background-color: #2196f3;
+  ali
 }
 
 .portfolio .title {
@@ -334,21 +350,22 @@ button {
   box-sizing: border-box;
   gap: 30px;
 }
-
+.portfolio-link {
+  text-decoration: none;
+}
 .footer {
   padding: 60px 0;
 }
-.border {
+/*.border {
   border-left: 1px;
   border-right: 1px;
   border-bottom: 1px;
   border-style: solid;
   border-color: #2196f3;
-}
+}*/
 
-.signature {
+/*.signature {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-}
+  border-bottom: 1px solid #eeeeee;*/
