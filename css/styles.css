@@ -100,6 +100,7 @@ button {
 
 .container .contact {
   display: flex;
+  margin-left: auto;
 }
 
 .nav-top {
@@ -256,6 +257,11 @@ button {
   text-decoration: none;
 }
 
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .address-link {
   color: var(--col--white);
   font-style: normal;
@@ -276,6 +282,11 @@ button {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  font-weight: 400;
+}
+
+.contact-footer .contact-linck:not(:last-child) {
+  margin: 9px 0;
 }
 
 .contact-footer .link.link:hover,
@@ -317,8 +328,25 @@ button {
 }
 .portfolio {
   display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 30px;
 }
-.port-button .list {
-  text-align: center;
-  display: inline;
+
+.footer {
+  padding: 60px 0;
+}
+.border {
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #2196f3;
+}
+
+.signature {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
